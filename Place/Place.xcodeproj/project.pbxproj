@@ -21,6 +21,8 @@
 		5AB8859F2C6C974000EC712B /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5AB8859E2C6C974000EC712B /* FirebaseFirestoreCombine-Community */; };
 		5AB885A12C6C974000EC712B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5AB885A02C6C974000EC712B /* FirebaseStorage */; };
 		5AB885A32C6C974000EC712B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5AB885A22C6C974000EC712B /* FirebaseStorageCombine-Community */; };
+		5AB885A72C6CA60700EC712B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5AB885A62C6CA60700EC712B /* .gitignore */; };
+		5AB885A92C6CA66700EC712B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AB885A82C6CA66700EC712B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		5AB885482C6C930900EC712B /* PlaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB8854C2C6C930900EC712B /* PlaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceUITests.swift; sourceTree = "<group>"; };
 		5AB8854E2C6C930900EC712B /* PlaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5AB885A62C6CA60700EC712B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5AB885A82C6CA66700EC712B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 		5AB8855B2C6C935800EC712B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5AB885A82C6CA66700EC712B /* GoogleService-Info.plist */,
+				5AB885A62C6CA60700EC712B /* .gitignore */,
 				5AB885352C6C930900EC712B /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -274,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AB885392C6C930900EC712B /* Preview Assets.xcassets in Resources */,
+				5AB885A72C6CA60700EC712B /* .gitignore in Resources */,
+				5AB885A92C6CA66700EC712B /* GoogleService-Info.plist in Resources */,
 				5AB885362C6C930900EC712B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
