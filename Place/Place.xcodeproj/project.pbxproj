@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A7A387D2C6CAB7F0020ABB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A7A387C2C6CAB7F0020ABB7 /* GoogleService-Info.plist */; };
 		5AB885322C6C930800EC712B /* PlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB885312C6C930800EC712B /* PlaceApp.swift */; };
 		5AB885342C6C930800EC712B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB885332C6C930800EC712B /* ContentView.swift */; };
 		5AB885362C6C930900EC712B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB885352C6C930900EC712B /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A7A387C2C6CAB7F0020ABB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5AB8852E2C6C930800EC712B /* Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Place.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB885312C6C930800EC712B /* PlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceApp.swift; sourceTree = "<group>"; };
 		5AB885332C6C930800EC712B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		5AB885252C6C930800EC712B = {
 			isa = PBXGroup;
 			children = (
+				5A7A387C2C6CAB7F0020ABB7 /* GoogleService-Info.plist */,
 				5AB885302C6C930800EC712B /* Place */,
 				5AB885412C6C930900EC712B /* PlaceTests */,
 				5AB8854B2C6C930900EC712B /* PlaceUITests */,
@@ -278,6 +281,7 @@
 			files = (
 				5AB885392C6C930900EC712B /* Preview Assets.xcassets in Resources */,
 				5AB885A72C6CA60700EC712B /* .gitignore in Resources */,
+				5A7A387D2C6CAB7F0020ABB7 /* GoogleService-Info.plist in Resources */,
 				5AB885362C6C930900EC712B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Place/Preview Content\"";
+				DEVELOPMENT_TEAM = RTF748PSLK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -496,6 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Place/Preview Content\"";
+				DEVELOPMENT_TEAM = RTF748PSLK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
