@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A7A387D2C6CAB7F0020ABB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A7A387C2C6CAB7F0020ABB7 /* GoogleService-Info.plist */; };
+		5A7A38822C6CE7100020ABB7 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A38812C6CE7100020ABB7 /* PlaceListView.swift */; };
 		5AB885322C6C930800EC712B /* PlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB885312C6C930800EC712B /* PlaceApp.swift */; };
 		5AB885342C6C930800EC712B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB885332C6C930800EC712B /* ContentView.swift */; };
 		5AB885362C6C930900EC712B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB885352C6C930900EC712B /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		5AB885A12C6C974000EC712B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5AB885A02C6C974000EC712B /* FirebaseStorage */; };
 		5AB885A32C6C974000EC712B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5AB885A22C6C974000EC712B /* FirebaseStorageCombine-Community */; };
 		5AB885A72C6CA60700EC712B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5AB885A62C6CA60700EC712B /* .gitignore */; };
+		5AC51DB72C6F65A10088E422 /* PlaceAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC51DB62C6F65A10088E422 /* PlaceAddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		5A7A387C2C6CAB7F0020ABB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A7A38812C6CE7100020ABB7 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		5AB8852E2C6C930800EC712B /* Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Place.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB885312C6C930800EC712B /* PlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceApp.swift; sourceTree = "<group>"; };
 		5AB885332C6C930800EC712B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		5AB8854C2C6C930900EC712B /* PlaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceUITests.swift; sourceTree = "<group>"; };
 		5AB8854E2C6C930900EC712B /* PlaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5AB885A62C6CA60700EC712B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5AC51DB62C6F65A10088E422 /* PlaceAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +93,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A7A387E2C6CE6DD0020ABB7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5A7A38812C6CE7100020ABB7 /* PlaceListView.swift */,
+				5AC51DB62C6F65A10088E422 /* PlaceAddView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		5AB885252C6C930800EC712B = {
 			isa = PBXGroup;
 			children = (
-				5A7A387C2C6CAB7F0020ABB7 /* GoogleService-Info.plist */,
 				5AB885302C6C930800EC712B /* Place */,
 				5AB885412C6C930900EC712B /* PlaceTests */,
 				5AB8854B2C6C930900EC712B /* PlaceUITests */,
@@ -113,7 +125,7 @@
 		5AB885302C6C930800EC712B /* Place */ = {
 			isa = PBXGroup;
 			children = (
-				5AB8855C2C6C938300EC712B /* Presents */,
+				5AB8855C2C6C938300EC712B /* Presentation */,
 				5AB8855B2C6C935800EC712B /* Resources */,
 				5AB885372C6C930900EC712B /* Preview Content */,
 			);
@@ -148,19 +160,21 @@
 		5AB8855B2C6C935800EC712B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5A7A387C2C6CAB7F0020ABB7 /* GoogleService-Info.plist */,
 				5AB885A62C6CA60700EC712B /* .gitignore */,
 				5AB885352C6C930900EC712B /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		5AB8855C2C6C938300EC712B /* Presents */ = {
+		5AB8855C2C6C938300EC712B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				5A7A387E2C6CE6DD0020ABB7 /* UI */,
 				5AB885312C6C930800EC712B /* PlaceApp.swift */,
 				5AB885332C6C930800EC712B /* ContentView.swift */,
 			);
-			path = Presents;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7A38822C6CE7100020ABB7 /* PlaceListView.swift in Sources */,
 				5AB885342C6C930800EC712B /* ContentView.swift in Sources */,
+				5AC51DB72C6F65A10088E422 /* PlaceAddView.swift in Sources */,
 				5AB885322C6C930800EC712B /* PlaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
