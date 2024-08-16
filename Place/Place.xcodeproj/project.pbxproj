@@ -25,6 +25,8 @@
 		5AB885A32C6C974000EC712B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5AB885A22C6C974000EC712B /* FirebaseStorageCombine-Community */; };
 		5AB885A72C6CA60700EC712B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5AB885A62C6CA60700EC712B /* .gitignore */; };
 		5AC51DB72C6F65A10088E422 /* PlaceAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC51DB62C6F65A10088E422 /* PlaceAddView.swift */; };
+		5AC51DBA2C6F723E0088E422 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC51DB92C6F723E0088E422 /* ColorExtension.swift */; };
+		5AC51DC22C6F7A6D0088E422 /* PlaceAddVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC51DC12C6F7A6D0088E422 /* PlaceAddVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		5AB8854E2C6C930900EC712B /* PlaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5AB885A62C6CA60700EC712B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5AC51DB62C6F65A10088E422 /* PlaceAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAddView.swift; sourceTree = "<group>"; };
+		5AC51DB92C6F723E0088E422 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		5AC51DC12C6F7A6D0088E422 /* PlaceAddVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAddVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,9 @@
 		5A7A387E2C6CE6DD0020ABB7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				5A7A38812C6CE7100020ABB7 /* PlaceListView.swift */,
-				5AC51DB62C6F65A10088E422 /* PlaceAddView.swift */,
+				5AC51DBF2C6F79A00088E422 /* PlaceList */,
+				5AC51DC02C6F79AF0088E422 /* PlaceAdd */,
+				5AC51DBC2C6F763E0088E422 /* Components */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -126,8 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				5AB8855C2C6C938300EC712B /* Presentation */,
-				5AB8855B2C6C935800EC712B /* Resources */,
 				5AB885372C6C930900EC712B /* Preview Content */,
+				5AC51DB82C6F70DE0088E422 /* Helper */,
+				5AB8855B2C6C935800EC712B /* Resources */,
 			);
 			path = Place;
 			sourceTree = "<group>";
@@ -175,6 +181,38 @@
 				5AB885332C6C930800EC712B /* ContentView.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5AC51DB82C6F70DE0088E422 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5AC51DB92C6F723E0088E422 /* ColorExtension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5AC51DBC2C6F763E0088E422 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5AC51DBF2C6F79A00088E422 /* PlaceList */ = {
+			isa = PBXGroup;
+			children = (
+				5A7A38812C6CE7100020ABB7 /* PlaceListView.swift */,
+			);
+			path = PlaceList;
+			sourceTree = "<group>";
+		};
+		5AC51DC02C6F79AF0088E422 /* PlaceAdd */ = {
+			isa = PBXGroup;
+			children = (
+				5AC51DB62C6F65A10088E422 /* PlaceAddView.swift */,
+				5AC51DC12C6F7A6D0088E422 /* PlaceAddVM.swift */,
+			);
+			path = PlaceAdd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,9 +360,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A7A38822C6CE7100020ABB7 /* PlaceListView.swift in Sources */,
+				5AC51DC22C6F7A6D0088E422 /* PlaceAddVM.swift in Sources */,
 				5AB885342C6C930800EC712B /* ContentView.swift in Sources */,
 				5AC51DB72C6F65A10088E422 /* PlaceAddView.swift in Sources */,
 				5AB885322C6C930800EC712B /* PlaceApp.swift in Sources */,
+				5AC51DBA2C6F723E0088E422 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
