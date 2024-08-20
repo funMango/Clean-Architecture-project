@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A7A387D2C6CAB7F0020ABB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A7A387C2C6CAB7F0020ABB7 /* GoogleService-Info.plist */; };
+		5A2FFF2E2C74508F004FBBF0 /* PlaceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FFF2D2C74508F004FBBF0 /* PlaceInteractor.swift */; };
+		5A2FFF312C745283004FBBF0 /* PlaceDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FFF302C745283004FBBF0 /* PlaceDBRepository.swift */; };
+		5A2FFF342C745DC1004FBBF0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FFF332C745DC1004FBBF0 /* Place.swift */; };
+		5A2FFF362C747F63004FBBF0 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FFF352C747F63004FBBF0 /* Loadable.swift */; };
+		5A2FFF382C74938D004FBBF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FFF372C74938D004FBBF0 /* GoogleService-Info.plist */; };
 		5A7A38822C6CE7100020ABB7 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A38812C6CE7100020ABB7 /* PlaceListView.swift */; };
 		5AB885322C6C930800EC712B /* PlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB885312C6C930800EC712B /* PlaceApp.swift */; };
-		5AB885342C6C930800EC712B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB885332C6C930800EC712B /* ContentView.swift */; };
 		5AB885362C6C930900EC712B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB885352C6C930900EC712B /* Assets.xcassets */; };
 		5AB885392C6C930900EC712B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB885382C6C930900EC712B /* Preview Assets.xcassets */; };
 		5AB885432C6C930900EC712B /* PlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB885422C6C930900EC712B /* PlaceTests.swift */; };
@@ -25,7 +28,6 @@
 		5AB885A32C6C974000EC712B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5AB885A22C6C974000EC712B /* FirebaseStorageCombine-Community */; };
 		5AB885A72C6CA60700EC712B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5AB885A62C6CA60700EC712B /* .gitignore */; };
 		5AC51DB72C6F65A10088E422 /* PlaceAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC51DB62C6F65A10088E422 /* PlaceAddView.swift */; };
-		5AC51DBA2C6F723E0088E422 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC51DB92C6F723E0088E422 /* ColorExtension.swift */; };
 		5AC51DC22C6F7A6D0088E422 /* PlaceAddVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC51DC12C6F7A6D0088E422 /* PlaceAddVM.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,11 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A7A387C2C6CAB7F0020ABB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A2FFF2D2C74508F004FBBF0 /* PlaceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInteractor.swift; sourceTree = "<group>"; };
+		5A2FFF302C745283004FBBF0 /* PlaceDBRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDBRepository.swift; sourceTree = "<group>"; };
+		5A2FFF332C745DC1004FBBF0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		5A2FFF352C747F63004FBBF0 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		5A2FFF372C74938D004FBBF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A7A38812C6CE7100020ABB7 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		5AB8852E2C6C930800EC712B /* Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Place.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB885312C6C930800EC712B /* PlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceApp.swift; sourceTree = "<group>"; };
-		5AB885332C6C930800EC712B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5AB885352C6C930900EC712B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AB885382C6C930900EC712B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5AB8853E2C6C930900EC712B /* PlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +66,6 @@
 		5AB8854E2C6C930900EC712B /* PlaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5AB885A62C6CA60700EC712B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5AC51DB62C6F65A10088E422 /* PlaceAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAddView.swift; sourceTree = "<group>"; };
-		5AC51DB92C6F723E0088E422 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		5AC51DC12C6F7A6D0088E422 /* PlaceAddVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAddVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +101,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A2FFF2A2C745031004FBBF0 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				5A2FFF2D2C74508F004FBBF0 /* PlaceInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		5A2FFF2F2C74523D004FBBF0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5A2FFF302C745283004FBBF0 /* PlaceDBRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5A2FFF322C745D9E004FBBF0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A2FFF332C745DC1004FBBF0 /* Place.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5A7A387E2C6CE6DD0020ABB7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,9 +158,13 @@
 		5AB885302C6C930800EC712B /* Place */ = {
 			isa = PBXGroup;
 			children = (
-				5AB8855C2C6C938300EC712B /* Presentation */,
+				5AB885312C6C930800EC712B /* PlaceApp.swift */,
+				5A2FFF322C745D9E004FBBF0 /* Models */,
+				5AB8855C2C6C938300EC712B /* Presents */,
+				5A2FFF2A2C745031004FBBF0 /* Interactors */,
+				5A2FFF2F2C74523D004FBBF0 /* Repository */,
 				5AB885372C6C930900EC712B /* Preview Content */,
-				5AC51DB82C6F70DE0088E422 /* Helper */,
+				5AC51DB82C6F70DE0088E422 /* Utilities */,
 				5AB8855B2C6C935800EC712B /* Resources */,
 			);
 			path = Place;
@@ -166,29 +198,27 @@
 		5AB8855B2C6C935800EC712B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5A7A387C2C6CAB7F0020ABB7 /* GoogleService-Info.plist */,
+				5A2FFF372C74938D004FBBF0 /* GoogleService-Info.plist */,
 				5AB885A62C6CA60700EC712B /* .gitignore */,
 				5AB885352C6C930900EC712B /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		5AB8855C2C6C938300EC712B /* Presentation */ = {
+		5AB8855C2C6C938300EC712B /* Presents */ = {
 			isa = PBXGroup;
 			children = (
 				5A7A387E2C6CE6DD0020ABB7 /* UI */,
-				5AB885312C6C930800EC712B /* PlaceApp.swift */,
-				5AB885332C6C930800EC712B /* ContentView.swift */,
 			);
-			path = Presentation;
+			path = Presents;
 			sourceTree = "<group>";
 		};
-		5AC51DB82C6F70DE0088E422 /* Helper */ = {
+		5AC51DB82C6F70DE0088E422 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				5AC51DB92C6F723E0088E422 /* ColorExtension.swift */,
+				5A2FFF352C747F63004FBBF0 /* Loadable.swift */,
 			);
-			path = Helper;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		5AC51DBC2C6F763E0088E422 /* Components */ = {
@@ -333,8 +363,8 @@
 			files = (
 				5AB885392C6C930900EC712B /* Preview Assets.xcassets in Resources */,
 				5AB885A72C6CA60700EC712B /* .gitignore in Resources */,
-				5A7A387D2C6CAB7F0020ABB7 /* GoogleService-Info.plist in Resources */,
 				5AB885362C6C930900EC712B /* Assets.xcassets in Resources */,
+				5A2FFF382C74938D004FBBF0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,10 +391,12 @@
 			files = (
 				5A7A38822C6CE7100020ABB7 /* PlaceListView.swift in Sources */,
 				5AC51DC22C6F7A6D0088E422 /* PlaceAddVM.swift in Sources */,
-				5AB885342C6C930800EC712B /* ContentView.swift in Sources */,
+				5A2FFF362C747F63004FBBF0 /* Loadable.swift in Sources */,
+				5A2FFF2E2C74508F004FBBF0 /* PlaceInteractor.swift in Sources */,
+				5A2FFF342C745DC1004FBBF0 /* Place.swift in Sources */,
 				5AC51DB72C6F65A10088E422 /* PlaceAddView.swift in Sources */,
+				5A2FFF312C745283004FBBF0 /* PlaceDBRepository.swift in Sources */,
 				5AB885322C6C930800EC712B /* PlaceApp.swift in Sources */,
-				5AC51DBA2C6F723E0088E422 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

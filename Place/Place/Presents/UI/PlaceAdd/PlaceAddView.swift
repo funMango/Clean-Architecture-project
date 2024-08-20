@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlaceAddView: View {
     @StateObject var viewModel: PlaceAddVM
-    @State var content = ""
+    @Binding var isSheetPresented: Bool
     
     var body: some View {
         NavigationStack {
@@ -31,7 +31,7 @@ struct PlaceAddView: View {
                 
                 ToolbarItem(placement: .topBarTrailing){
                     Button {
-                        
+                        viewModel.addPlace()
                     } label: {
                         Text("추가")
                             .foregroundStyle(viewModel.name.isEmpty ? .gray : .red)
@@ -39,12 +39,22 @@ struct PlaceAddView: View {
                     .disabled(viewModel.name.isEmpty)
                 }
             }
+            .onChange(of: viewModel.loadingState) {
+                if viewModel.loadingState == .loaded {
+                    isSheetPresented = false
+                }
+            }
         }
     }
 }
 
-
-
 #Preview {
-    PlaceAddView(viewModel: PlaceAddVM())
+    PlaceAddView(
+        viewModel: PlaceAddVM(
+            interactor: PlaceInteractor(
+                dbRepository: PlaceDBRepository()
+            )
+        ), 
+        isSheetPresented: .constant(false)
+    )
 }

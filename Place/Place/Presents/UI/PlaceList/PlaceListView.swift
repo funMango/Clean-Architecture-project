@@ -7,19 +7,13 @@
 
 import SwiftUI
 
-struct Place: Hashable {
-    let name: String
-    let address: String
-    let content: String
-}
-
-
 struct PlaceListView: View {
     @State private var mock = [
         Place(name: "양식", address: "강남구 논현동", content: ""),
         Place(name: "곱창", address: "서초구 서초동", content: ""),
         Place(name: "막창", address: "서초구 양재동", content: ""),
     ]
+    @State var isSheetPresented = false
     
     var body: some View {
         NavigationStack {
@@ -33,13 +27,23 @@ struct PlaceListView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        
+                        isSheetPresented.toggle()
                     } label: {
                         Text("추가")
                             .fontWeight(.semibold)
                             .foregroundStyle(.red)
                     }
                 }
+            }
+            .sheet(isPresented: $isSheetPresented) {
+                PlaceAddView(
+                    viewModel: PlaceAddVM(
+                        interactor: PlaceInteractor(
+                            dbRepository: PlaceDBRepository()
+                        )
+                    ),
+                    isSheetPresented: $isSheetPresented
+                )
             }
         }
     }

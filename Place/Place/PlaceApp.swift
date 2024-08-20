@@ -24,7 +24,7 @@ struct YourApp: App {
   var body: some Scene {
     WindowGroup {
       NavigationView {
-        PlaceAddView(viewModel: PlaceAddVM())
+        PlaceListView()
       }
     }
   }
