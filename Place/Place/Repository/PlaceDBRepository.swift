@@ -10,6 +10,7 @@ import FirebaseFirestore
 
 protocol PlaceDBProtocol{
     func save(_ place: Place) async throws
+    func listen() async throws -> AsyncThrowingStream<[Place], Error>
 }
 
 struct PlaceDBRepository: PlaceDBProtocol{
@@ -27,6 +28,28 @@ struct PlaceDBRepository: PlaceDBProtocol{
                 }
             } catch {
                 continuation.resume(throwing: error)
+            }
+        }
+    }
+    
+    func listen() async throws -> AsyncThrowingStream<[Place], Error>  {
+        AsyncThrowingStream<[Place], Error> { continuation in
+            let ref = db.collection("Place")
+                        
+            ref.addSnapshotListener { (snapshot, error) in
+                if let error = error {
+                    continuation.finish(throwing: error)
+                    return
+                }
+                
+                do {
+                    let places = try snapshot?.documents.compactMap{ document -> Place? in
+                        try document.data(as: Place.self)
+                    } ?? []
+                    continuation.yield(places)
+                } catch {
+                    continuation.finish(throwing: error)
+                }
             }
         }
     }

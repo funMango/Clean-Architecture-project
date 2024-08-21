@@ -12,6 +12,7 @@
 		5A2FFF342C745DC1004FBBF0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FFF332C745DC1004FBBF0 /* Place.swift */; };
 		5A2FFF362C747F63004FBBF0 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FFF352C747F63004FBBF0 /* Loadable.swift */; };
 		5A2FFF382C74938D004FBBF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FFF372C74938D004FBBF0 /* GoogleService-Info.plist */; };
+		5A3645612C7589D900104D83 /* PlaceListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3645602C7589D900104D83 /* PlaceListVM.swift */; };
 		5A7A38822C6CE7100020ABB7 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A38812C6CE7100020ABB7 /* PlaceListView.swift */; };
 		5AB885322C6C930800EC712B /* PlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB885312C6C930800EC712B /* PlaceApp.swift */; };
 		5AB885362C6C930900EC712B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB885352C6C930900EC712B /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		5A2FFF332C745DC1004FBBF0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		5A2FFF352C747F63004FBBF0 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		5A2FFF372C74938D004FBBF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A3645602C7589D900104D83 /* PlaceListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListVM.swift; sourceTree = "<group>"; };
 		5A7A38812C6CE7100020ABB7 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		5AB8852E2C6C930800EC712B /* Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Place.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB885312C6C930800EC712B /* PlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceApp.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				5A7A38812C6CE7100020ABB7 /* PlaceListView.swift */,
+				5A3645602C7589D900104D83 /* PlaceListVM.swift */,
 			);
 			path = PlaceList;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			files = (
 				5A7A38822C6CE7100020ABB7 /* PlaceListView.swift in Sources */,
 				5AC51DC22C6F7A6D0088E422 /* PlaceAddVM.swift in Sources */,
+				5A3645612C7589D900104D83 /* PlaceListVM.swift in Sources */,
 				5A2FFF362C747F63004FBBF0 /* Loadable.swift in Sources */,
 				5A2FFF2E2C74508F004FBBF0 /* PlaceInteractor.swift in Sources */,
 				5A2FFF342C745DC1004FBBF0 /* Place.swift in Sources */,

@@ -7,11 +7,12 @@
 
 import Foundation
 
-protocol PlaceAddProtocol{
+protocol PlaceProtocol{
     func save(_ place: Place) throws
+    func listen() async throws -> AsyncThrowingStream<[Place], Error>
 }
 
-struct PlaceInteractor: PlaceAddProtocol {
+struct PlaceInteractor: PlaceProtocol {
     let dbRepository: PlaceDBProtocol
     
     func save(_ place: Place) throws {
@@ -21,6 +22,14 @@ struct PlaceInteractor: PlaceAddProtocol {
             } catch {
                 throw error
             }
+        }
+    }
+    
+    func listen() async throws -> AsyncThrowingStream<[Place], Error> {
+        do {
+            return try await dbRepository.listen()            
+        } catch {
+            throw error
         }
     }
 }

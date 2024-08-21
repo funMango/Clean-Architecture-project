@@ -13,9 +13,9 @@ class PlaceAddVM: ObservableObject {
     @Published var content = ""
     @Published var loadingState: Loadable = .notRequest
     
-    let interactor: PlaceAddProtocol
+    let interactor: PlaceProtocol
     
-    init(interactor: PlaceAddProtocol) {
+    init(interactor: PlaceProtocol) {
         self.interactor = interactor
     }
     

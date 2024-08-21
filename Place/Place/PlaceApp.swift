@@ -24,7 +24,13 @@ struct YourApp: App {
   var body: some Scene {
     WindowGroup {
       NavigationView {
-        PlaceListView()
+          PlaceListView(
+              viewModel: PlaceListVM(
+                  interactor: PlaceInteractor(
+                      dbRepository: PlaceDBRepository()
+                  )
+              )
+          )
       }
     }
   }

@@ -15,7 +15,7 @@ struct PlaceAddView: View {
         NavigationStack {
             List {
                 Section{
-                    TextField("이름", text: $viewModel.name)
+                    TextField("이름", text: $viewModel.name)                        
                     TextField("주소", text: $viewModel.address)
                 }
                 

@@ -8,17 +8,13 @@
 import SwiftUI
 
 struct PlaceListView: View {
-    @State private var mock = [
-        Place(name: "양식", address: "강남구 논현동", content: ""),
-        Place(name: "곱창", address: "서초구 서초동", content: ""),
-        Place(name: "막창", address: "서초구 양재동", content: ""),
-    ]
+    @StateObject var viewModel: PlaceListVM
     @State var isSheetPresented = false
-    
+        
     var body: some View {
         NavigationStack {
             List {
-                ForEach(mock, id: \.self) { place in
+                ForEach(viewModel.places, id: \.self) { place in
                     PlaceCellView(place: place)
                 }
             }
@@ -45,6 +41,11 @@ struct PlaceListView: View {
                     isSheetPresented: $isSheetPresented
                 )
             }
+            .onAppear {
+                    Task {
+                        await viewModel.listen()
+                    }
+                }
         }
     }
 }
@@ -70,5 +71,11 @@ struct PlaceCellView: View {
 }
 
 #Preview {
-    PlaceListView()
+    PlaceListView(
+        viewModel: PlaceListVM(
+            interactor: PlaceInteractor(
+                dbRepository: PlaceDBRepository()
+            )
+        )
+    )
 }
